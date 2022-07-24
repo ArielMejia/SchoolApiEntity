@@ -6,6 +6,7 @@ public class Student
     public Guid PersonId {get;set;}
     public string Career {get;set;}
     public string Faculty {get;set;}
-    public virtual Person Person {get;set;}
-
+    public  Person Person {get;set;}
+    public  Enrollment Enrollment {get;set;}
+    public ICollection<CourseStudent> CourseStudents {get;set;}
 }
